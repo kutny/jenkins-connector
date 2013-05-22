@@ -44,7 +44,7 @@ class GithubPushController {
 	public function indexAction(Request $request) {
 		$payload = $request->request->get('payload');
 
-		$this->test('jirka', 'koutny');
+		$this->test('jirka', 'koutny', 1);
 
 		if (!$payload) {
 			return new Response('payload POST data missing');
@@ -77,16 +77,20 @@ class GithubPushController {
 			$this->appBuildRunner->runBuild($jenkinsConfig, $pusherEmail, $jobName);
 		}
 
+		$this->appBuildRunner->test22(true, 1);
+
 		return new Response('done');
 	}
 
 	/**
-	 * @param integer $number
+	 * @param int $number
 	 * @param boolean $boolean
+	 * @param string $string
 	 */
-	private function test($number, $boolean) {
+	private function test($number, $boolean, $string) {
 		var_dump($number);
 		var_dump($boolean);
+		var_dump($string);
 	}
 
 	private function getBranchName(stdClass $requestObject) {

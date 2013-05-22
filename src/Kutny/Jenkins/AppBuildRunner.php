@@ -20,5 +20,14 @@ class AppBuildRunner {
 
 		$this->buildWithParametersRunner->runBuildWithParameters($jenkinsConfig, $jobName, $params);
 	}
+
+	/**
+	 * @param int $number
+	 * @param boolean $boolean
+	 */
+	public function test22($number, $boolean) {
+		var_dump($number);
+		var_dump($boolean);
+	}
 	
 }
