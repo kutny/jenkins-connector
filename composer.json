@@ -1,0 +1,52 @@
+{
+    "name": "kutny/jenkins-connector",
+    "autoload": {
+        "files": ["libs/KutnyLib/functions.php"],
+        "psr-0": {
+            "": "src/",
+            "KutnyLib": ["libs/", "tests/phpunit/unit/"]
+        }
+    },
+	"require": {
+		"php": ">=5.3.3",
+		"symfony/symfony": "2.3.*",
+		"twig/extensions": "1.0.*",
+		"sensio/distribution-bundle": "2.3.*",
+		"sensio/framework-extra-bundle": "2.3.*",
+		"sensio/generator-bundle": "2.3.*",
+		"incenteev/composer-parameter-handler": "~2.0",
+		"sensio/buzz-bundle": "master",
+		"kutny/autowiring-bundle": "*",
+		"tracy/tracy": "*"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+		],
+		"post-update-cmd": [
+			"Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+		]
+	},
+	"config": {
+		"bin-dir": "bin"
+	},
+	"minimum-stability": "dev",
+	"extra": {
+		"symfony-app-dir": "app",
+		"symfony-web-dir": "web",
+		"incenteev-parameters": {
+			"file": "app/config/parameters.yml"
+		},
+		"branch-alias": {
+			"dev-master": "2.3-dev"
+		}
+	}
+}

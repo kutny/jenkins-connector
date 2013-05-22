@@ -1,0 +1,4 @@
+route.kutny_admin:
+    resource: '@KutnyJenkinsBundle/Controller/'
+    type:     annotation
+    prefix:   /
