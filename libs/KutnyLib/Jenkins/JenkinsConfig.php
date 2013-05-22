@@ -11,6 +11,14 @@ class JenkinsConfig {
 	private $masterBranchName;
 	private $templateJobName;
 
+	/**
+	 * @param string $host
+	 * @param string $username
+	 * @param string $password
+	 * @param string $token
+	 * @param string $masterBranchName
+	 * @param string $templateJobName
+	 */
 	public function __construct($host, $username, $password, $token, $masterBranchName, $templateJobName) {
 		$this->host = $host;
 		$this->username = $username;

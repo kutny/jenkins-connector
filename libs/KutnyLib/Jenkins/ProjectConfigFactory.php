@@ -16,8 +16,8 @@ class ProjectConfigFactory {
 		$projectConfigArray = $this->allProjectsConfig[$projectName]['jenkins'];
 
 		$jenkinsConfig = new JenkinsConfig(
-			$projectConfigArray['host'],
-			$projectConfigArray['username'],
+			1,
+			2,
 			$projectConfigArray['password'],
 			$projectConfigArray['token'],
 			$projectConfigArray['master_branch_name'],

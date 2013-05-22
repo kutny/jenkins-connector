@@ -44,6 +44,8 @@ class GithubPushController {
 	public function indexAction(Request $request) {
 		$payload = $request->request->get('payload');
 
+		$this->test('jirka', 'koutny');
+
 		if (!$payload) {
 			return new Response('payload POST data missing');
 		}
@@ -76,6 +78,15 @@ class GithubPushController {
 		}
 
 		return new Response('done');
+	}
+
+	/**
+	 * @param integer $number
+	 * @param boolean $boolean
+	 */
+	private function test($number, $boolean) {
+		var_dump($number);
+		var_dump($boolean);
 	}
 
 	private function getBranchName(stdClass $requestObject) {
