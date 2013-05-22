@@ -1,0 +1,41 @@
+services:
+
+    buzz_browser_factory:
+        class: KutnyLib\BuzzBrowser\BuzzBrowserFactory
+
+    controller.github_push_controller:
+        class: Kutny\JenkinsBundle\Controller\GithubPushController
+
+    jenkins.app_build_runner:
+        class: Kutny\Jenkins\AppBuildRunner
+
+    jenkins.configuration_updater:
+        class: Kutny\Jenkins\ConfigurationUpdater
+
+    jenkins.job_from_branch_creator:
+        class: Kutny\Jenkins\JobFromBranchCreator
+
+    jenkins.pusher_email_getter:
+        class: Kutny\Jenkins\PusherEmailGetter
+
+    jenkins.action_runner:
+        class: KutnyLib\Jenkins\ActionRunner
+
+    jenkins.build_with_parameters_runner:
+        class: KutnyLib\Jenkins\Job\BuildWithParametersRunner
+
+    jenkins.job_config_fetcher:
+        class: KutnyLib\Jenkins\Job\Config\JobConfigFetcher
+
+    jenkins.job_config_updater:
+        class: KutnyLib\Jenkins\Job\Config\JobConfigUpdater
+
+    jenkins.job_duplicator:
+        class: KutnyLib\Jenkins\Job\JobDuplicator
+
+    jenkins.job_remover:
+        class: KutnyLib\Jenkins\Job\JobRemover
+
+    jenkins.project_config_factory:
+        class: KutnyLib\Jenkins\ProjectConfigFactory
+        arguments: [%projects%]

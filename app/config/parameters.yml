@@ -1,0 +1,16 @@
+parameters:
+    secret: eb92fa18b4568c26a2463f0d04bc1eec985b3aa6
+    locale: en
+
+    projects:
+        my-test-project:
+            jenkins:
+                host: jenkins.jirikoutny.cz
+                username: builder
+                password: znF24pr2MxG9
+                token: 0d36becd64b86739077380a0c207b32d65deccb1
+                master_branch_name: dev
+                template_job_name: jirikoutny-web
+            githubNames2Emails:
+                kutny: jirkakoutny@gmail.com
+                jost125: jan.machala@email.cz

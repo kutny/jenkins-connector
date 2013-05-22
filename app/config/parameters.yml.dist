@@ -1,0 +1,15 @@
+# This file is auto-generated during the composer install
+parameters:
+    secret: eb92fa18b4568c26a2463f0d04bc1eec985b3aa6
+    locale: en
+
+    projects:
+        my-test-project:
+            jenkins:
+                host:
+                username:
+                password:
+                token:
+                master_branch_name: dev
+                template_job_name:
+            githubNames2Emails:
