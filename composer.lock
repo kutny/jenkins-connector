@@ -560,17 +560,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kutny/tracy-bundle.git",
-                "reference": "9e76d86dc46b63cc03c25a5db3e6c550ee98d4c8"
+                "reference": "ae1508e2f87651e3eaa8133ba3f2041ff6626f40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kutny/tracy-bundle/zipball/9e76d86dc46b63cc03c25a5db3e6c550ee98d4c8",
-                "reference": "9e76d86dc46b63cc03c25a5db3e6c550ee98d4c8",
+                "url": "https://api.github.com/repos/kutny/tracy-bundle/zipball/ae1508e2f87651e3eaa8133ba3f2041ff6626f40",
+                "reference": "ae1508e2f87651e3eaa8133ba3f2041ff6626f40",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
-                "tracy/tracy": "*"
+                "tracy/tracy": "dev-master"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -592,9 +592,10 @@
             "homepage": "https://github.com/kutny/tracy-bundle",
             "keywords": [
                 "debug",
+                "debugging",
                 "nette"
             ],
-            "time": "2013-05-27 14:48:56"
+            "time": "2013-05-29 14:07:03"
         },
         {
             "name": "psr/log",
