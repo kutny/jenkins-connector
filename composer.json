@@ -1,5 +1,7 @@
 {
     "name": "kutny/jenkins-connector",
+	"license": "MIT",
+	"type": "project",
     "autoload": {
         "files": ["libs/KutnyLib/functions.php"],
         "psr-0": {
