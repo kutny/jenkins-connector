@@ -17,9 +17,10 @@
 		"sensio/framework-extra-bundle": "2.3.*",
 		"sensio/generator-bundle": "2.3.*",
 		"incenteev/composer-parameter-handler": "~2.0",
-		"sensio/buzz-bundle": "master",
-		"kutny/autowiring-bundle": "*",
-		"kutny/tracy-bundle": "dev-master"
+		"sensio/buzz-bundle": "0.2",
+		"kutny/autowiring-bundle": "dev-master",
+		"kutny/tracy-bundle": "0.1",
+		"tracy/tracy": "@dev"
 	},
 	"scripts": {
 		"post-install-cmd": [
@@ -40,7 +41,7 @@
 	"config": {
 		"bin-dir": "bin"
 	},
-	"minimum-stability": "dev",
+	"minimum-stability": "stable",
 	"extra": {
 		"symfony-app-dir": "app",
 		"symfony-web-dir": "web",
